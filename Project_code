@@ -1,0 +1,50 @@
+package project1;
+import java.util.*;
+
+public class NUMBER_SYSTEM {
+	public static void main (String[] args) {
+Scanner sc = new Scanner (System.in);
+System.out.println("Tell Me What type of Method do u want to perform");
+System.out.println("1. Fibonacci");
+System.out.println("2. Even");
+System.out.println("3. Odd");
+System.out.println("4. Square");
+int choice = sc.nextInt();
+int n = sc.nextInt();
+
+switch(choice) {
+case 1: fibonacci(n); break;
+case 2: evenSeries(n); break;
+case 3: oddSeries(n); break;
+case 4: squareSeries(n); break;
+default: System.out.println("Invalid choice");
+}
+sc.close();
+}
+
+public static void fibonacci(int n) {
+int a = 0, b = 1;
+for(int i = 1; i <= n; i++) {
+System.out.print(a + " ");
+int c = a + b;
+a = b;
+b = c;
+}}
+
+public static void evenSeries(int n) {
+for(int i = 1; i <= n; i++) {
+System.out.print(i * 2 + " ");
+}}
+
+public static void oddSeries(int n) {
+for(int i = 0; i < n; i++) {
+ System.out.print(2 * i + 1 + " ");
+} }
+
+ public static void squareSeries(int n) {
+for(int i = 1; i <= n; i++) {
+ System.out.print(i * i + " ");
+ } }
+
+}
+ 
